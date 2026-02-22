@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture-2</title>
+</head>
+<body>
+    <h1>Links</h1>
+    <h2>External Links</h2>
+    <a target="_self" href="https://www.google.com">Google</a> <!--target for making the link inside or a diferent tap-->
+    <a target="_blanks" href="https://youtube.com">Youtube</a>
+
+    <h2>Internal Links</h2>
+    <a target="_blank" href="/lecture_2/about.html">About me</a>
+    <a target="_blank" href="/lecture_2/contact.html"> Contact me</a>
+    <a target="_blank" href="/lecture_2/pages/services.html">Services</a>
+
+    <h2>Download Links</h2>
+    <a target="_blank" href="/lecture_2/documents/sample.pdf " >view pdf</a>
+    <a href="/lecture_2/documents/sample.pdf" download="Annual Report">download pdf</a>
+
+    <h2>Images as links</h2>
+    <a target="_blank" href="https://google.com">
+        <img width="100px" height="100px" src="https://avatars.mds.yandex.net/i?id=d7548c6ceaae98f3e6c8d916f6b01a1d1cbd6899-5856310-images-thumbs&n=13" alt="google">
+    </a>
+
+    <h2>Title Attribute</h2>
+    <a title="istanbul aydin university" target="_blank" href="https://google.com">
+        <img width="100px" height="100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Istanbul_Ayd%C4%B1n_University_logo.svg/1200px-Istanbul_Ayd%C4%B1n_University_logo.svg.png" alt="">
+    </a>
+
+    <h2>HTML TABLES</h2>
+    <table border="true">
+        <tr> <!--tr stands for table row-->
+            <th>Name</th><!--th stands for table header-->
+            <th>Age</th>
+            <th>country</th>
+        </tr>
+        <tr>
+            <td>Harry Depp</td><!--td stands for table data-->
+            <td>28</td>
+            <td>Britian</td>
+        </tr>
+        <tr>
+            <td>john Smith</td>
+            <td>35</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Ram Krishna</td>
+            <td>19</td>
+            <td>Nepal</td>
+        </tr>
+    </table>
+    <h2>COLSPAN Attribute</h2>
+    <table border="true">
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+            <th colspan="2">Course</th>
+        </tr>
+        <tr>
+            <td>Ninga</td>
+            <td>1</td>
+            <td>20</td>
+            <td>C++</td> 
+            <td>Python</td>
+        </tr>
+        <tr>
+            <td>Ninga</td>
+            <td>2</td>
+            <td>31</td>
+            <td align="center" colspan="2"> Java</td>
+        </tr>
+        <tr>
+            <td>Ninga</td>
+            <td>3</td>
+            <td>29</td>
+            <td>JavaScripts</td>
+            <td>R</td>
+        </tr>
+     </table>
+        <h2>Rowspan Attribute</h2>
+        <table border="true">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td rowspan="3">1</td>
+                <td rowspan="3">David</td>
+                <td>Maths</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Computers</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td rowspan="3">2</td>
+                <td rowspan="3">Alex</td>
+                <td>Maths</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Computers</td>
+                <td>70</td>
+            </tr>
+        </table>
+        <h1>HTML FORMS</h1>
+        <form action="#">
+            <fieldset>
+                <legend>Personal information</legend>
+                <label for="fname">First Name:</label><br>
+                <input type="text" name="fname" id="fname" placeholder="Type your first name here..."><br>
+                <label for="lname">Last Name:</label><br> <!--name is important to send the input to the service-->
+                <input type="text" name="lname" id="lname" placeholder="Type your last name here..."><br>
+                <label for="username" >User Name:</label><br>
+                <input required type="text" name="username" id="username" placeholder="Type your username..."><br>
+                <label for="pwd">Password</label><br>
+                <input required type="password" name="pwd" id="pwd" placeholder="Password..."><br>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email"><br>
+                <label for="age">Age:</label><br>
+                <input type="number" name="age" id="age" min="18" max="100"><br>
+                <label for="Brithday">Birthday</label><br>
+                <input type="date" name="Birthday" id="Birthday"><br>
+                <label for="picture"> Picture:</label><br>
+                <input type="file" name="picture" id="picture" accept="image/*"><br>
+                <p>Gender:</p>
+                <input type="radio" name="gender" id="gender" value="male"> <!--value is important-->
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="gender" value="female">
+                <label for="female">Female</label><br>
+ 
+                <label for="teams"> Choose a favoruite team:</label>
+                <select name="teams" id="teams">
+                    <option value="apple">Apple</option>
+                    <option value="orange">Orange</option>
+                    <option value="banana">Banana</option>
+                    <option value="mango">Mango</option>
+                    <option value="pinapple">Pinapple</option>
+                </select><br>
+
+                <label for="brands"> choose your favorite car brands press CTRL + Right for muiltiple selection: </label>
+                <select name="brands" id="brands" multiple size="3">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select><br>
+
+                <p>Hobbies:</p>
+                <input type="checkbox" name="hobby" id="listening" value="listening">
+                <label for="listening"> Listening</label>
+                <input type="checkbox" name="hobby" id="listening" value="listening">
+                <label for="listening"> Listening</label>
+                <input type="checkbox" name="hobby" id="listening" value="listening">
+                <label for="listening"> Listening</label>
+                <input type="checkbox" name="hobby" id="listening" value="listening">
+                <label for="listening"> Listening</label> 
+                <br>
+    
+                <label for="feedback">Any feedback</label><br>
+                <textarea name="feedback" id="fedback" cols="20" rows="5"></textarea><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    
+</body>
+</html>
