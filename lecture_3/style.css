@@ -1,0 +1,101 @@
+p:first-child{
+    color: red;
+}
+
+p:last-child{
+    color: blue;
+}
+p:nth-child(odd){
+    color: pink;
+}
+/*
+a:link{
+    /*unvisted
+    color: red;
+}
+a:visited{
+    color: aquamarine;
+}
+a:hover{
+    color: purple;
+}
+a:active{
+    color: yellow;
+}
+
+*{
+    color: red;
+}
+h2{
+    color: black;
+}
+p{
+    color: blueviolet;
+}
+
+.highlight {
+    background-color: yellow;
+}
+#id_title{
+    color: red;
+}
+#id_info{
+    color: green;
+    font-size: 24px;
+}
+#special{
+    color: red;
+}
+.text{
+    color: blue;
+}
+.large{
+    font-size: 24px;
+}
+.bold{
+    font-weight: bold;
+}
+.btn{
+    background-color: yellow;
+    border: none;
+    font-size: 22px;
+}
+.primary{
+    background-color: dodgerblue;
+    color: #fff;
+}
+
+.danger{
+    background-color: red;
+    color: #fff;
+}
+
+
+div>p {
+    color: yellow; /*child combinator
+}
+
+div>section , p{
+    color: brown;
+}
+
+div + p{
+    color: green; /*p directly after div
+}
+
+
+/*extenal share the slyles for all html files
+
+
+div ~ p{
+    color: purple;
+}
+
+a[ target = "_blank"]{
+    color: red;
+}
+
+input[type = "text"]{
+    color: pink;
+}
+*/

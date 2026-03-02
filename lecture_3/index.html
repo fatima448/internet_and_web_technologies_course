@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture-3</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--if we put it after it will win-->
+    <!--<style>
+        h2{
+            color:black;
+        }
+        p{
+            color: red;
+        }
+    </style>
+-->
+  </head>
+  <body>
+    <h1>Introduction to css</h1>
+    <h2 style="color: blue">inline CSS</h2>
+    <p style="color: brown">This paragraph uses Inline CSS.</p>
+    <h2>Block & Inline Elements</h2>
+    <p>This paragraph is a block level element</p>
+    <p>Heading Tags, paragraph tag, lists, Table, Form</p>
+    <h2>Div element</h2>
+    <div style="background-color: aqua">
+      <p>This is the firsst div element in the page</p>
+      <p>div element is used as a container for other HTML elements</p>
+      <ul>
+        <li>Item-1</li>
+        <li>Item-2</li>
+        <li>Item-3</li>
+      </ul>
+    </div>
+    <div style="background-color: coral">
+      <!--div is a block element -->
+      <p>This is the firsst div element in the page</p>
+      <p>div element is used as a container for other HTML elements</p>
+      <ol>
+        <li>Item-1</li>
+        <li>Item-2</li>
+        <li>Item-3</li>
+      </ol>
+    </div>
+    <h2>Inline Elements</h2>
+    <p>Link Element , images , Label , Input , Button</p>
+    <a href="#">Link</a>
+    <h2>Span Element</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo,
+      veritatis alias.
+      <span style="background-color: bisque">Beatae corporis at ad illo</span>,
+      repudiandae dolores tenetur voluptas laudantium id dolorum,
+      <span style="background-color: blueviolet"
+        >minima non perferendis odit magnam ratione sed?</span
+      >
+    </p>
+
+    <h2>Internal CSS</h2>
+    <p>This paragraph is styled with internal CSS</p>
+
+    <h2>Extenal CSS</h2>
+    <p>This paragraph is styled with External CSS</p>
+
+    <h2>CSS priority</h2>
+    <p style="color: blueviolet">This paragraph is styled with inlinne CSS</p>
+
+    <h2>CSS Selectors</h2>
+    <ul>
+      <il>Element selectors</il>
+      <il> Class selectors </il>
+      <il>id selectors</il>
+      <il>combinator selectors</il>
+      <il>attribute selectors</il>
+      <il>pseduo Class and pseduo Element selectors</il>
+    </ul>
+
+    <h2>Class Selectors</h2>
+    <p class="highlight">this class has class of highlight</p>
+    <p class="highlight">this class has class of highligh</p>
+    <p>ths class has no class of highligh</p>
+
+    <h2 id="id_title">id Selectors</h2>
+    <p id="id_info">this class has id of id_info</p>
+    <p>ths class has no id</p>
+
+    <h2>Class vs ID priority</h2>
+    <!--id , class , parameter -->
+    <p class="text" id="special">this paragraph have both class and id</p>
+
+    <h2>Multiple classes</h2>
+    <p class="text large bold">This paragraph has 3 classes</p>
+
+    <button class="btn">Normal button</button>
+    <button class="btn primary">primary button</button>
+    <button class="btn danger">Danger button</button>
+
+    <h2>Desendent combinator</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis harum
+      nemo fuga voluptatem. Fuga enim sit ex accusamus quos, debitis assumenda
+      vel, aperiam animi rem error nesciunt quam ab ut.
+    </p>
+    <div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, mollitia
+        officia quo vel neque illum. In tempore magni corporis ipsam officia
+        illum molestiae provident animi! Dolorem quae necessitatibus laudantium
+        ratione!
+      </p>
+    </div>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <div>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <section>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </section>
+    </div>
+
+    <h2>Group combinator</h2>
+    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+    <div>Lorem ipsum dolor sit amet consectetur.</div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div>
+      <section>Lorem, ipsum dolor.</section>
+    </div>
+
+    <h2>Adjacent sibling combinator</h2>
+    <p>Lorem ipsum dolor sit.</p>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <div>Lorem ipsum dolor sit.</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <div>Lorem ipsum dolor sit.</div>
+    <p>Lorem, ipsum dolor.</p>
+
+    <h2>subsequent sibling combinator</h2>
+    <p>paragraph before div</p>
+    <p>paragraph before div</p>
+    <div>Div</div>
+    <p>paragraph after div</p>
+    <code> printf ("hello world"); </code>
+    <p>paragraph after div</p>
+
+    <ul>
+      <a href="http://google.com"></a>
+      <a href="http://youtube.com">...</a>
+    </ul>
+
+    <h2>Universal selector</h2>
+
+    <ul>
+      <a href="http://x.com">x</a>
+      <a href="http://ubis.com">ubis</a>
+      <a href="http://google.com">google</a>
+      <a href="http://instagram.com">instagram</a>
+    </ul>
+    <div>
+      <p>first paragraph</p>
+      <p>2 paragraph</p>
+      <p>3 paragraph</p>
+      <p>4 paragraph</p>
+      <p>5 paragraph</p>
+      <p>6 paragraph</p>
+    </div>
+  </body>
+</html>
