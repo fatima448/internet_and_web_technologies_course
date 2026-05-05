@@ -1,25 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Profile - Pawvera</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Profile</title>
+    <link rel="icon" href="images/logo.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="back">
+    <nav class="container">
+      <ul class="nav-links" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#categories">Products</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
 
-<nav class="container">
-  <div class="logo"><h1>Pawvera</h1></div>
-</nav>
+      <div class="logo">
+        <h1>Pawvera</h1>
+      </div>
+      <div class="nav-right">
+        <div class="search-box">
+          <input type="text" placeholder="Search..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <i class="fa-solid fa-bars menu-icon" id="menuBtn"></i>
 
-<section class="container">
-  <h2>User Profile 👤</h2>
+        <a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+        <a href="profile.html"><i class="fa-solid fa-user"></i></a>
+      </div>
+    </nav>
 
-  <div class="profile-box">
-    <p><strong>Name:</strong> Fatima</p>
-    <p><strong>Email:</strong> example@email.com</p>
-  </div>
+    <div class="profile-page">
+      <div class="profile-hero">
+        <h2>Fatima Alfurais</h2>
+        <p>fatimaalfurais@gmail.com</p>
+      </div>
 
-</section>
+      <div class="row">
+        <div class="box"><strong>12</strong><span>Orders</span></div>
+        <div class="box"><strong>3</strong><span>My Pets</span></div>
+      </div>
 
-</body>
+      <div class="card">
+        <h3><i class="fa-solid fa-user"></i> Personal Info</h3>
+        <div class="field-row">
+          <div class="field">
+            <label>First Name</label>
+            <input type="text" value="Fatima" />
+          </div>
+          <div class="field">
+            <label>Last Name</label>
+            <input type="text" value="Alfurais" />
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="email" value="fatimaalfurais@gmail.com" />
+          </div>
+          <div class="field">
+            <label>Phone</label>
+            <input type="tel" value="0555 555 55 55" />
+          </div>
+        </div>
+        <button class="btn-save">Save Changes</button>
+      </div>
+
+      <!-- Logout -->
+      <button class="btn-logout" onclick="window.location.href = 'login.html'">
+        <i class="fa-solid fa-right-from-bracket"></i> Log Out
+      </button>
+    </div>
+    </div>
+    <footer>Powered by Fatima Alfurais</footer>
+  </body>
 </html>
