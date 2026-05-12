@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the Number!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="headercontent">Can you guess the number between 1-100?</div>
+      <div class="refreshfield">
+        <button class="refresh">Refresh</button>
+      </div>
+    </div>
+
+    <hr width="100%" />
+
+    <div class="container">
+      <div class="box hint">...</div>
+      <div class="box randomnumber">?</div>
+      <div class="box guessfield">
+        <input type="number" name="guess" id="guess" />
+        <button class="hit">Guess</button>
+      </div>
+      <div class="box try">Try: 0</div>
+      <div class="box highscore">Highscore: 0</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
